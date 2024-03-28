@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Tipografía Roboto*/
+
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.extra-small-text {
+    font-size: 9px; /* Tamaño de texto en píxeles */
+}
+
+
+.navbar-brand img {
+    max-width: 20px;
+}
+
+.transparent {
+    background-color: transparent !important;
+    backdrop-filter: blur(5px); /* Añade un efecto de desenfoque al fondo (opcional) */
+}
+
+.Carrusel_h{
+    text-shadow: 2px 2px 4px rgba(1, 0, 0, 1.5);
+}
+
+
+/*Esta media queries se utiliza para que la section quienes somos
+no se muestre en pantallas mas pequeñas*/
+@media (max-width: 768px) {
+    .hide-on-small-screen {
+        display: none;
+    }
+}
+
+/*Paletas de colores*/
+.gris-100{
+    background: #f8f9fa;
+}
+.gris-200{
+    background: #e9ecef;
+}
+.gris-300{
+    background: #dee2e6;
+}
+.gris-400{
+    background: #ced4da;
+}
+.gris-500{
+    background: #adb5bd;
+}
+.gris-600{
+    background: #6c757d;
+}
+.gris-700{
+    background: #495057;
+}
+.gris-800{
+    background: #343a40;
+}
+.gris-900{
+    background: #212529;
+}
+
+.card_img {
+    border: 5px solid #495057; /* Puedes ajustar el color del borde según sea necesario */
+    border-radius: 1px; /* Opcional: Agrega esquinas redondeadas al borde */
+}
+
+.rotacion{
+	animation: animacion 5s infinite;
+}
+
+@keyframes animacion{
+	from{
+		transform: scale(1) rotate(360deg);
+	}
+	50%{
+		transform: scale(1.2);	
+	}
+	to{
+		transform: scale(1);
+		color: white;	
+	}
+}
+
+/*Estilos para los Tooltip*/
+.custom-tooltip .tooltip-inner {
+    width: 500px;
+    background-color: #495057; /* Cambia este valor al color de fondo deseado */
+    color: #dee2e6; /* Cambia este valor al color del texto deseado */
+    border-radius: 3px; /* Opcional: redondea las esquinas del tooltip */
+    border: 1px solid #495057; /* Opcional: agrega un borde al tooltip */
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* transformacion de tamaño en las card cuando pase el mouse sobre ellas, se utiliza JQuery*/
+.card {
+    transition: transform 0.5s; /* Agrega transición suave al cambio de tamaño */
+}
